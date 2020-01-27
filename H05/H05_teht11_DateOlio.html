@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function mikaPaiva (){
+var paiva = new Date();
+var viikonpaiva = new Array(7);
+viikonpaiva[0] = "sunnuntai";
+viikonpaiva[1] = "maanantai";
+viikonpaiva[2] = "tiistai";
+viikonpaiva[3] = "keskiviikko";
+viikonpaiva[4] = "torstai";
+viikonpaiva[5] = "perjantai";
+viikonpaiva[6] = "lauantai";
+
+document.write("Tänään on " + viikonpaiva[paiva.getDay()] + ", hyvää päivänjatkoa!");
+}
+
+mikaPaiva();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+document.write("Fibonaccin 14. luku on " + getNthFibonacciNumberES5(14)); // tulostus HTML-dokumenttiin
+function getNthFibonacciNumberES5(nth) {  // luodaan funktio
+  
+  var a = 0, b = 1, temp; //temp == undefined 
+  
+  for (var i = 0; i <= nth; i++) { // fibonacci for-loopissa
+  temp = a; 
+  a = a + b; 
+  b = temp; 
+  } 
+  return b; // funktio palauttaa arvon b
+}
+</script>
+</body>
+</html>

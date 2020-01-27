@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var array = new Array(101);
+var i
+for (i = 0; i < array.length; i++) { 
+  array[i] = Math.floor(Math.random() * 101); 
+}
+
+
+document.write("random array: <br>")
+arrayPrint(array);
+var array2 = arraySort(array);
+document.write(" <br> sorted array: <br> ")
+arrayPrint(array2);
+
+function arraySort(array){
+return array.sort(function(a, b){return a-b});;
+}
+
+function arrayPrint(array){
+var i;
+for (i = 0; i < array.length; i++) {
+if(i == 0){
+document.write(array[i]);
+}
+else{
+  document.write( "<br>" + array[i])
+}
+}
+}
+</script>
+</body>
+</html>

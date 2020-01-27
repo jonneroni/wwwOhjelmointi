@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var alennus = 30;
+var perushinta = 100; 
+document.write("Tuotteen alkuperäisestä hinnasta (" + perushinta + "e)" + " alennusprosentilla " + alennus + " jäljelle jäävä hinta on  " + alennaHinta(alennus));
+function alennaHinta(alennusprosentti){
+
+var alennettuhinta = function(perushinta){return (perushinta - perushinta * alennusprosentti * 0.01);}
+return alennettuhinta(perushinta);
+} 
+</script>
+</body>
+</html>

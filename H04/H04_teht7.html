@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var array = new Array(101);
+var i;
+for (i = 0; i < array.length; i++) { 
+  array[i] = i;
+}
+funktio(array);
+
+function funktio(array){
+var i;
+for (i = 0; i < array.length; i++) {
+if(i == 0){
+document.write(array[i]);
+}
+else{
+  document.write( "<br>" + array[i])
+}
+}
+}
+</script>
+</body>
+</html>

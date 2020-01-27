@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+document.write(" ilman alennuskoodia luxury huoneen hinta on: " + hinta("luxury"));
+document.write(" <br> alennuskoodilla ale10 luxury huoneen hinta on: " + hinta("luxury", "ale10") );
+document.write(" <br> alennuskoodilla ale30 luxury huoneen hinta on: " + hinta("luxury", "ale30") );
+document.write(" <br> ilman alennuskoodia standard huoneen hinta on: " + hinta("standard") );
+document.write(" <br> alennuskoodilla ale10 standard huoneen hinta on: " + hinta("standard", "ale10") );
+document.write(" <br> alennuskoodilla ale30 standard huoneen hinta on: " + hinta("standard", "ale30") );
+function hinta(tyyppi, alennuskoodi){
+var huoneenhinta;
+if(tyyppi === "luxury"){
+huoneenhinta = 100;
+}
+else{
+huoneenhinta = 60;
+}
+if (alennuskoodi === "ale10"){
+return huoneenhinta = (huoneenhinta * 0.9);
+}
+if(alennuskoodi === "ale30"){
+return huoneenhinta = (huoneenhinta *0.7);
+}
+else{
+}
+return huoneenhinta;
+}
+</script>
+</body>
+</html>

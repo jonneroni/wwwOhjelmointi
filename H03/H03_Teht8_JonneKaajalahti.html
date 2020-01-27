@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+document.write("Fibonaccin 17. luku on " + getNthFibonacciNumberES5(17) + "."); // tulostus HTML-dokumenttiin
+function getNthFibonacciNumberES5(nth){ // luodaan funktio
+  var a = 0, b = 1, temp;
+
+  while (nth >= 0){ // fibonacci while-loopissa
+    temp = a;
+    a = a + b;
+    b = temp;
+    nth--;
+  }
+  return b; // funktio palauttaa arvon b
+}
+</script>
+</body>
+</html>
